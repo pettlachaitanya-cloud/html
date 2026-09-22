@@ -1,2 +1,2 @@
 # html
-My Frist wed page
+My Frist web page
