@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borrow Now | Borrow Box</title>
+    <style>
+        body { background-color: #f5f5dc; color: #243451; font-family: Arial, sans-serif; }
+        header { background-color: #800000; color: white; text-align: center; padding: 18px; }
+        nav { background-color: #800000; text-align: center; padding: 12px; }
+        nav a { color: white; margin: 10px; }
+        main { background-color: white; padding: 20px; margin: 20px auto; max-width: 850px; }
+        h1, h2 { color: #c62828; }
+        h3 { color: #c62828; }
+        header h1 { color: #f5f5dc; }
+        .welcome { background-color: #e8f0ff; padding: 20px; text-align: center; }
+        .button { background-color: #3678e5; color: white; padding: 10px; display: inline-block; }
+        table { width: 100%; border-collapse: collapse; }
+        th { background-color: #142b52; color: white; }
+        th, td { border: 1px solid #a9bad8; padding: 10px; text-align: left; }
+        label { color: #245bb2; display: block; margin-top: 14px; }
+        input, select, textarea { padding: 7px; max-width: 95%; }
+        button { background-color: #3678e5; color: white; padding: 10px; margin-top: 15px; border: 0; }
+        footer { background-color: #800000; color: white; text-align: center; padding: 15px; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>📦 BORROW BOX</h1>
+        <p>Share • Borrow • Save</p>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="items.html">Available Items</a>
+        <a href="how-it-works.html">How It Works</a>
+        <a href="borrow.html">Borrow Now</a>
+        <a href="about.html">About</a>
+    </nav>
+    <main>
+        <h2>📝 Borrow Request Form</h2>
+        <p>Enter your details below.</p>
+        <!-- No JavaScript or backend. The form opens a thank-you page. -->
+        <!-- Fields have no name attributes, so personal details are not added to the URL. -->
+        <form action="thank-you.html" method="get">
+            <label for="studentName">Student Name:</label>
+            <input type="text" id="studentName" placeholder="Enter your name" required>
+
+            <label for="collegeId">College ID:</label>
+            <input type="text" id="collegeId" placeholder="Enter your college ID" required>
+
+            <label for="mobileNumber">Mobile Number:</label>
+            <input type="tel" id="mobileNumber" placeholder="Enter your mobile number" autocomplete="tel" required>
+
+            <label for="item">Choose Item:</label>
+            <select id="item" required>
+                <option value="">Select an item</option>
+                <option value="Books">Books</option>
+                <option value="Calculator">Calculator</option>
+                <option value="Charger">Charger</option>
+                <option value="Sports Equipment">Sports Equipment</option>
+            </select>
+
+            <label for="borrowDate">Borrow Date:</label>
+            <input type="date" id="borrowDate" required>
+
+            <label for="returnDate">Return Date:</label>
+            <input type="date" id="returnDate" required>
+
+            <p><button type="submit">Submit Request</button></p>
+        </form>
+    </main>
+    <footer>
+        <p>© 2026 Borrow Box</p>
+    </footer>
+</body>
+</html>
